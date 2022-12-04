@@ -18,7 +18,7 @@ items[2].style.backgroundColor = 'green';
 
 for(let i=0; i<items.length; i++){
     items[i].style.fontWeight = 'bold';
-}*/
+}
 
 let newItem = document.getElementsByClassName('new-list-item');
 console.log(newItem);
@@ -26,4 +26,16 @@ newItem[0].style.fontWeight = 'bold';
 
 let items = document.getElementsByTagName('li');
 console.log(items[4]);
-items[4].style.color = 'green';
+items[4].style.color = 'green';*/
+
+let item2 = document.querySelector('li:nth-child(2)');
+item2.style.backgroundColor = 'green';
+let item3 = document.querySelector('li:nth-child(3)');
+item3.style.visibility = 'hidden';
+
+let items = document.querySelectorAll('li');
+items[1].style.color = 'green';
+let oddItems = document.querySelectorAll('li:nth-child(odd)');
+for(let i=0; i<oddItems.length; i++){
+    oddItems[i].style.backgroundColor = 'green';
+}
